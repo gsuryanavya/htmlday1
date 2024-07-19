@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .schedule, .things-to-watch {
+            border: 4px double black;
+            padding: 10px;
+            margin: 10px;
+            width: fit-content;
+        }
+        .header {
+            font-weight: bold;
+            text-align: center;
+        }
+        .schedule table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        .schedule td {
+            border: 2px double black;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .schedule .time {
+            font-weight: bold;
+        }
+        .things-to-watch-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        .things-to-watch {
+            margin: 80px 0;
+            border: 4px double black;
+            padding: 10px;
+            text-align: center;
+        }
+        .things-to-watch-table {
+            margin: 20px 0;
+        }
+        .things-to-watch img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="schedule">
+            <div class="header"><mark>My Day</mark></div>
+            <table>
+                <tr>
+                    <td>1. wake up early
+                        <ul>
+                            <li style="list-style-type:square;">5AM</li>
+                            <li style="list-style-type:circle;">walk</li>
+                            <li style="list-style-type:circle;">jog</li>
+                        </ul>
+                    </td>
+                    <td rowspan="3" style="vertical-align: top;">
+                        <div class="things-to-watch">
+                            <div class="header"><mark>Things to watch</mark></div>
+                            <table>
+                                <tr>
+                                    <td><img src="https://tse1.mm.bing.net/th?id=OIP.s4fWYC3Mwo5xUIitfJFOhwHaE8&pid=Api&P=0&h=220" alt="Running"></td>
+                                    <td><img src="https://tse4.mm.bing.net/th?id=OIP.SeNYiGFb9ICl3MjpkVl0LAHaIA&pid=Api&P=0&h=220" alt="Omelette"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="https://tse1.mm.bing.net/th?id=OIP.-fN7-Y36OOQxV-zlueT-pgHaGQ&pid=Api&P=0&h=220" alt="Coffee"></td>
+                                    <td><img src="https://tse2.mm.bing.net/th?id=OIP.8HisOD91LqrgQYTi8C0sLwHaEH&pid=Api&P=0&h=220" alt="Meeting"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2. breakfast
+                        <ul>
+                            <li style="list-style-type:square;">5AM</li>
+                            <li style="list-style-type:circle;">walk</li>
+                            <li style="list-style-type:circle;">jog</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3. go to Saveetha
+                        <ul>
+                            <li style="list-style-type:square;">5AM</li>
+                            <li style="list-style-type:circle;">walk</li>
+                            <li style="list-style-type:circle;">jog</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
